@@ -1,0 +1,24 @@
+
+# Editor tmp
+
+**/.nvim/
+**/.vscode/
+**/.vs/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Tmp
+**/bin/
+**/obj/
+*.tmp
+
+# Unk
+*.pdb
+*.cache
+*.log
+.idea/
+Thumbs.db
+.DS_Store
