@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|c:\\users\\juan\\source\\repos\\calculadora-cs\\calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\calculadora\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\calculadora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABCB29B5-F8A9-4CD9-A73A-AC4B4D660818}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\.gitignore",
+              "RelativeDocumentMoniker": "Calculadora\\.gitignore",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\.gitignore",
+              "RelativeToolTip": "Calculadora\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
+              "WhenOpened": "2025-10-15T19:14:07.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Form1.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Form1.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Calculadora\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T18:43:37.274Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Program.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Program.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Program.cs",
+              "RelativeToolTip": "Calculadora\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:00:02.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Form1.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Form1.cs",
+              "ToolTip": "C:\\Users\\Juan\\source\\repos\\calculadora-cs\\Calculadora\\Calculadora\\Form1.cs",
+              "RelativeToolTip": "Calculadora\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T18:43:56.484Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
