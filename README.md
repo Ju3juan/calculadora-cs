@@ -1,6 +1,5 @@
 # Calc CS
 
-
 ## Build
 
 ### Requerimientos (Windows) (Obligatorios)
