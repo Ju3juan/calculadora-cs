@@ -15,23 +15,7 @@ namespace Calculadora
         public Form1()
         {
             InitializeComponent();
-            ConfigurarBotones();
-
         }
-        private void ConfigurarBotones()
-        {
-            btnSuma.Text = "\uE948";
-            btnMultiplicar.Text = "\ue947";
-            btnResta.Text = "\uE949";
-            btnDividir.Text = "\uE94A";
-            btnRaiz.Text = "\uE94B";
-            btnNegativo.Text = "\uE94D";
-            btnIgual.Text = "\uE94E";
-            btnDel.Text = "\uE94F";
-            btnCuadrado.Text = "x\u00B2";
-            btnMostrarHistorial.Text = "\uf738";
-        }
-
         private void btnMostrarHistorial_Click(object sender, EventArgs e)
         {
             ToggleHistorial();
