@@ -52,8 +52,8 @@
             this.btnDel = new System.Windows.Forms.Button();
             this.btnMostrarHistorial = new System.Windows.Forms.Button();
             this.btnNegativo = new System.Windows.Forms.Button();
-            this.pnlHistorial = new System.Windows.Forms.Panel();
             this.lstHistorial = new System.Windows.Forms.ListBox();
+            this.pnlHistorial = new System.Windows.Forms.Panel();
             this.pnlHistorial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,7 @@
             this.btn1.TabIndex = 0;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -86,6 +87,7 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -101,6 +103,7 @@
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -116,6 +119,7 @@
             this.btn4.TabIndex = 5;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -131,6 +135,7 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -146,6 +151,7 @@
             this.btn6.TabIndex = 3;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn7
             // 
@@ -161,6 +167,7 @@
             this.btn7.TabIndex = 8;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -176,6 +183,7 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -192,6 +200,7 @@
             this.btn9.TabIndex = 6;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnMultiplicar
             // 
@@ -207,6 +216,7 @@
             this.btnMultiplicar.TabIndex = 9;
             this.btnMultiplicar.Text = "";
             this.btnMultiplicar.UseVisualStyleBackColor = false;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // btnResta
             // 
@@ -222,6 +232,7 @@
             this.btnResta.TabIndex = 10;
             this.btnResta.Text = "";
             this.btnResta.UseVisualStyleBackColor = false;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
             // 
             // btnSuma
             // 
@@ -237,6 +248,7 @@
             this.btnSuma.TabIndex = 11;
             this.btnSuma.Text = "";
             this.btnSuma.UseVisualStyleBackColor = false;
+            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
             // 
             // lblDisplay
             // 
@@ -248,6 +260,7 @@
             this.lblDisplay.Tag = "0";
             this.lblDisplay.Text = "0";
             this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblDisplay.Click += new System.EventHandler(this.lblDisplay_Click);
             // 
             // btnIgual
             // 
@@ -265,6 +278,7 @@
             this.btnIgual.TabIndex = 13;
             this.btnIgual.Text = "";
             this.btnIgual.UseVisualStyleBackColor = false;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btnPunto
             // 
@@ -280,6 +294,7 @@
             this.btnPunto.TabIndex = 14;
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = false;
+            this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
             // 
             // btn0
             // 
@@ -295,6 +310,7 @@
             this.btn0.TabIndex = 15;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnRaiz
             // 
@@ -310,6 +326,7 @@
             this.btnRaiz.TabIndex = 19;
             this.btnRaiz.Text = "";
             this.btnRaiz.UseVisualStyleBackColor = false;
+            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
             // btnDividir
             // 
@@ -325,6 +342,7 @@
             this.btnDividir.TabIndex = 20;
             this.btnDividir.Text = "";
             this.btnDividir.UseVisualStyleBackColor = false;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
             // btnCuadrado
             // 
@@ -340,6 +358,7 @@
             this.btnCuadrado.TabIndex = 21;
             this.btnCuadrado.Text = "x²";
             this.btnCuadrado.UseVisualStyleBackColor = false;
+            this.btnCuadrado.Click += new System.EventHandler(this.btnCuadrado_Click);
             // 
             // btnC
             // 
@@ -355,6 +374,7 @@
             this.btnC.TabIndex = 16;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // BtnCE
             // 
@@ -370,6 +390,7 @@
             this.BtnCE.TabIndex = 17;
             this.BtnCE.Text = "CE";
             this.BtnCE.UseVisualStyleBackColor = false;
+            this.BtnCE.Click += new System.EventHandler(this.BtnCE_Click);
             // 
             // btnDel
             // 
@@ -385,6 +406,7 @@
             this.btnDel.TabIndex = 18;
             this.btnDel.Text = "";
             this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnMostrarHistorial
             // 
@@ -415,16 +437,7 @@
             this.btnNegativo.TabIndex = 23;
             this.btnNegativo.Text = "";
             this.btnNegativo.UseVisualStyleBackColor = false;
-            // 
-            // pnlHistorial
-            // 
-            this.pnlHistorial.Controls.Add(this.lstHistorial);
-            this.pnlHistorial.Location = new System.Drawing.Point(12, 208);
-            this.pnlHistorial.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlHistorial.Name = "pnlHistorial";
-            this.pnlHistorial.Size = new System.Drawing.Size(675, 575);
-            this.pnlHistorial.TabIndex = 24;
-            this.pnlHistorial.Visible = false;
+            this.btnNegativo.Click += new System.EventHandler(this.btnNegativo_Click);
             // 
             // lstHistorial
             // 
@@ -436,6 +449,17 @@
             this.lstHistorial.Name = "lstHistorial";
             this.lstHistorial.Size = new System.Drawing.Size(576, 464);
             this.lstHistorial.TabIndex = 0;
+            this.lstHistorial.SelectedIndexChanged += new System.EventHandler(this.lstHistorial_SelectedIndexChanged);
+            // 
+            // pnlHistorial
+            // 
+            this.pnlHistorial.Controls.Add(this.lstHistorial);
+            this.pnlHistorial.Location = new System.Drawing.Point(12, 208);
+            this.pnlHistorial.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlHistorial.Name = "pnlHistorial";
+            this.pnlHistorial.Size = new System.Drawing.Size(675, 575);
+            this.pnlHistorial.TabIndex = 24;
+            this.pnlHistorial.Visible = false;
             // 
             // Form1
             // 
@@ -443,7 +467,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(699, 789);
-            this.Controls.Add(this.pnlHistorial);
             this.Controls.Add(this.btnNegativo);
             this.Controls.Add(this.btnMostrarHistorial);
             this.Controls.Add(this.btnCuadrado);
@@ -468,6 +491,7 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn7);
+            this.Controls.Add(this.pnlHistorial);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Calculadora";
@@ -479,6 +503,7 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
@@ -494,7 +519,6 @@
         private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnPunto;
-        private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnRaiz;
         private System.Windows.Forms.Button btnDividir;
         private System.Windows.Forms.Button btnCuadrado;
@@ -503,8 +527,8 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnMostrarHistorial;
         private System.Windows.Forms.Button btnNegativo;
-        private System.Windows.Forms.Panel pnlHistorial;
         private System.Windows.Forms.ListBox lstHistorial;
+        private System.Windows.Forms.Panel pnlHistorial;
     }
 }
 
