@@ -2,7 +2,7 @@
 
 ## Preview
 
-![v0.1_calculadora-cs](./assets/img/v0.1.png)
+![v0.1_calculadora-cs](./assets/v0.1.png)
 
 ## Resumen
 Crear una **aplicación de calculadora en Windows Forms con C#** que permita a un usuario anónimo realizar cálculos básicos y algunos avanzados, registrando cada operación en una base 
