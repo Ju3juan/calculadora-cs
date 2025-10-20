@@ -84,43 +84,73 @@ namespace Calculadora
         private void btnResta_Click(object sender, EventArgs e)
         {
             double numeroActual = double.Parse(lblDisplay.Text);
-            string operacion = calcControlador.ProcesarOperador(numeroActual, "+");
+            string operacion = calcControlador.ProcesarOperador(numeroActual, "-");
             lblOperacion.Text = operacion.Replace("-", "-");
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
             double numeroActual = double.Parse(lblDisplay.Text);
-            string operacion = calcControlador.ProcesarOperador(numeroActual, "+");
+            string operacion = calcControlador.ProcesarOperador(numeroActual, "*");
             lblOperacion.Text = operacion.Replace("*", "*");
         }
 
         private void btnDividir_Click(object sender, EventArgs e)
         {
             double numeroActual = double.Parse(lblDisplay.Text);
-            string operacion = calcControlador.ProcesarOperador(numeroActual, "+");
+            string operacion = calcControlador.ProcesarOperador(numeroActual, "/");
             lblOperacion.Text = operacion.Replace("/", "/");
         }
 
         private void btnNegativo_Click(object sender, EventArgs e)
         {
-            // TODO: Implementar funcionalidad de cambio de signo
+            // TODO: btnNegativo_Click
         }
 
         private void btnCuadrado_Click(object sender, EventArgs e)
         {
-
+            // TODO: btnCuadrado_Click
         }
 
         private void btnRaiz_Click(object sender, EventArgs e)
         {
+            // TODO: btnRaiz_Click
+
+        }
+        private void btnMod_Click(object sender, EventArgs e)
+        {
+            // TODO: btnMod_Click
+
+        }
+
+        private void btnFact_Click(object sender, EventArgs e)
+        {
+            // TODO: btnFact_Click
 
         }
 
         // igual
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            double resultado = calcControlador.ProcesarIgual(double.Parse(lblDisplay.Text));
+            double numeroActual = double.Parse(lblDisplay.Text);
+
+            if (calcControlador.OperadorActual == "/" && numeroActual == 0)
+            {
+                lblDisplay.Text = "No se puede dividir entre cero";
+                lblOperacion.Text = "";
+                calcControlador.Reset();
+                return;
+            }
+
+            if (calcControlador.OperadorActual == "√" && numeroActual < 0)
+            {
+                lblDisplay.Text = "No se puede calcular raíz de número negativo";
+                lblOperacion.Text = "";
+                calcControlador.Reset();
+                return;
+            }
+
+            double resultado = calcControlador.ProcesarIgual(numeroActual);
             lblDisplay.Text = resultado.ToString();
             lblOperacion.Text = "";
         }
@@ -133,7 +163,7 @@ namespace Calculadora
             lblDisplay.Text = "0";
             lblOperacion.Text = "";
         }
-
+ 
         private void btnCE_Click(object sender, EventArgs e)
         {
             lblDisplay.Text = "0";
@@ -174,5 +204,6 @@ namespace Calculadora
                 this.pnlHistorial.SendToBack();
             }
         }
+
     }
 }

@@ -20,6 +20,10 @@ namespace Calculadora
                 // TODO: Al cuadrado
                 case "√":
                 // TODO: Raiz cuadrada
+                case "mod":
+                // TODO: mod
+                case "fact(":
+                // TODO: factorial
                 default:
                     return b;
             }
