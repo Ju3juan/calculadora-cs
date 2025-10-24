@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form1
+    partial class Calculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -40,31 +40,33 @@
             this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnResta = new System.Windows.Forms.Button();
             this.btnSuma = new System.Windows.Forms.Button();
-            this.lblDisplay = new System.Windows.Forms.Label();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnPunto = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
             this.btnCuadrado = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
-            this.BtnCE = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnMostrarHistorial = new System.Windows.Forms.Button();
             this.btnNegativo = new System.Windows.Forms.Button();
+            this.btnFact = new System.Windows.Forms.Button();
+            this.btnMod = new System.Windows.Forms.Button();
             this.pnlHistorial = new System.Windows.Forms.Panel();
             this.lstHistorial = new System.Windows.Forms.ListBox();
             this.lblOperacion = new System.Windows.Forms.Label();
-            this.btnFact = new System.Windows.Forms.Button();
-            this.btnMod = new System.Windows.Forms.Button();
+            this.BtnCE = new System.Windows.Forms.Button();
+            this.buttonTheme = new System.Windows.Forms.Button();
+            this.lblDisplay = new System.Windows.Forms.Label();
+            this.btnC = new System.Windows.Forms.Button();
             this.pnlHistorial.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
             // 
             this.btn1.AutoSize = true;
-            this.btn1.BackColor = System.Drawing.Color.White;
+            this.btn1.BackColor = System.Drawing.Color.GreenYellow;
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn1.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn1.ForeColor = System.Drawing.Color.Black;
             this.btn1.Location = new System.Drawing.Point(12, 599);
@@ -74,13 +76,14 @@
             this.btn1.TabIndex = 0;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn2
             // 
             this.btn2.AutoSize = true;
-            this.btn2.BackColor = System.Drawing.Color.White;
+            this.btn2.BackColor = System.Drawing.Color.GreenYellow;
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn2.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn2.ForeColor = System.Drawing.Color.Black;
             this.btn2.Location = new System.Drawing.Point(181, 599);
@@ -90,13 +93,14 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn3
             // 
             this.btn3.AutoSize = true;
-            this.btn3.BackColor = System.Drawing.Color.White;
+            this.btn3.BackColor = System.Drawing.Color.GreenYellow;
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn3.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn3.ForeColor = System.Drawing.Color.Black;
             this.btn3.Location = new System.Drawing.Point(352, 599);
@@ -106,13 +110,14 @@
             this.btn3.TabIndex = 2;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn4
             // 
             this.btn4.AutoSize = true;
-            this.btn4.BackColor = System.Drawing.Color.White;
+            this.btn4.BackColor = System.Drawing.Color.GreenYellow;
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn4.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn4.ForeColor = System.Drawing.Color.Black;
             this.btn4.Location = new System.Drawing.Point(12, 505);
@@ -122,13 +127,14 @@
             this.btn4.TabIndex = 5;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn5
             // 
             this.btn5.AutoSize = true;
-            this.btn5.BackColor = System.Drawing.Color.White;
+            this.btn5.BackColor = System.Drawing.Color.GreenYellow;
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn5.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn5.ForeColor = System.Drawing.Color.Black;
             this.btn5.Location = new System.Drawing.Point(181, 505);
@@ -138,13 +144,14 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn6
             // 
             this.btn6.AutoSize = true;
-            this.btn6.BackColor = System.Drawing.Color.White;
+            this.btn6.BackColor = System.Drawing.Color.GreenYellow;
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn6.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn6.ForeColor = System.Drawing.Color.Black;
             this.btn6.Location = new System.Drawing.Point(352, 505);
@@ -154,13 +161,14 @@
             this.btn6.TabIndex = 3;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn7
             // 
             this.btn7.AutoSize = true;
-            this.btn7.BackColor = System.Drawing.Color.White;
+            this.btn7.BackColor = System.Drawing.Color.GreenYellow;
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn7.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn7.ForeColor = System.Drawing.Color.Black;
             this.btn7.Location = new System.Drawing.Point(12, 411);
@@ -170,13 +178,14 @@
             this.btn7.TabIndex = 8;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn8
             // 
             this.btn8.AutoSize = true;
-            this.btn8.BackColor = System.Drawing.Color.White;
+            this.btn8.BackColor = System.Drawing.Color.GreenYellow;
             this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn8.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn8.ForeColor = System.Drawing.Color.Black;
             this.btn8.Location = new System.Drawing.Point(181, 411);
@@ -186,14 +195,15 @@
             this.btn8.TabIndex = 7;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btn9
             // 
             this.btn9.AutoSize = true;
-            this.btn9.BackColor = System.Drawing.Color.White;
+            this.btn9.BackColor = System.Drawing.Color.GreenYellow;
             this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn9.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn9.ForeColor = System.Drawing.Color.Black;
             this.btn9.Location = new System.Drawing.Point(352, 411);
@@ -203,13 +213,14 @@
             this.btn9.TabIndex = 6;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnMultiplicar
             // 
             this.btnMultiplicar.AutoSize = true;
-            this.btnMultiplicar.BackColor = System.Drawing.Color.White;
+            this.btnMultiplicar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnMultiplicar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMultiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMultiplicar.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnMultiplicar.ForeColor = System.Drawing.Color.Black;
             this.btnMultiplicar.Location = new System.Drawing.Point(523, 411);
@@ -217,15 +228,17 @@
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(164, 89);
             this.btnMultiplicar.TabIndex = 9;
+            this.btnMultiplicar.Tag = "*";
             this.btnMultiplicar.Text = "";
             this.btnMultiplicar.UseVisualStyleBackColor = false;
-            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
+            this.btnMultiplicar.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnResta
             // 
             this.btnResta.AutoSize = true;
-            this.btnResta.BackColor = System.Drawing.Color.White;
+            this.btnResta.BackColor = System.Drawing.Color.LimeGreen;
             this.btnResta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnResta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnResta.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnResta.ForeColor = System.Drawing.Color.Black;
             this.btnResta.Location = new System.Drawing.Point(523, 599);
@@ -233,15 +246,17 @@
             this.btnResta.Name = "btnResta";
             this.btnResta.Size = new System.Drawing.Size(164, 89);
             this.btnResta.TabIndex = 10;
+            this.btnResta.Tag = "-";
             this.btnResta.Text = "";
             this.btnResta.UseVisualStyleBackColor = false;
-            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            this.btnResta.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnSuma
             // 
             this.btnSuma.AutoSize = true;
-            this.btnSuma.BackColor = System.Drawing.Color.White;
+            this.btnSuma.BackColor = System.Drawing.Color.LimeGreen;
             this.btnSuma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSuma.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSuma.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnSuma.ForeColor = System.Drawing.Color.Black;
             this.btnSuma.Location = new System.Drawing.Point(523, 505);
@@ -249,44 +264,37 @@
             this.btnSuma.Name = "btnSuma";
             this.btnSuma.Size = new System.Drawing.Size(164, 89);
             this.btnSuma.TabIndex = 11;
+            this.btnSuma.Tag = '+';
             this.btnSuma.Text = "";
             this.btnSuma.UseVisualStyleBackColor = false;
-            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
-            // 
-            // lblDisplay
-            // 
-            this.lblDisplay.Font = new System.Drawing.Font("Segoe Fluent Icons", 30F);
-            this.lblDisplay.Location = new System.Drawing.Point(12, 145);
-            this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(675, 75);
-            this.lblDisplay.TabIndex = 12;
-            this.lblDisplay.Tag = "0";
-            this.lblDisplay.Text = "0";
-            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnSuma.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnIgual
             // 
             this.btnIgual.AutoSize = true;
-            this.btnIgual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnIgual.BackColor = System.Drawing.Color.LimeGreen;
             this.btnIgual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnIgual.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnIgual.FlatAppearance.BorderSize = 0;
+            this.btnIgual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIgual.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
-            this.btnIgual.ForeColor = System.Drawing.Color.Transparent;
+            this.btnIgual.ForeColor = System.Drawing.Color.Black;
             this.btnIgual.Location = new System.Drawing.Point(523, 693);
             this.btnIgual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(164, 89);
             this.btnIgual.TabIndex = 13;
+            this.btnIgual.Tag = '=';
             this.btnIgual.Text = "";
             this.btnIgual.UseVisualStyleBackColor = false;
-            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            this.btnIgual.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnPunto
             // 
             this.btnPunto.AutoSize = true;
-            this.btnPunto.BackColor = System.Drawing.Color.White;
+            this.btnPunto.BackColor = System.Drawing.Color.LimeGreen;
             this.btnPunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPunto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPunto.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btnPunto.ForeColor = System.Drawing.Color.Black;
             this.btnPunto.Location = new System.Drawing.Point(352, 694);
@@ -296,13 +304,14 @@
             this.btnPunto.TabIndex = 14;
             this.btnPunto.Text = ".";
             this.btnPunto.UseVisualStyleBackColor = false;
-            this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
+            this.btnPunto.Click += new System.EventHandler(this.AgregarPunto);
             // 
             // btn0
             // 
             this.btn0.AutoSize = true;
-            this.btn0.BackColor = System.Drawing.Color.White;
+            this.btn0.BackColor = System.Drawing.Color.GreenYellow;
             this.btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn0.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.btn0.ForeColor = System.Drawing.Color.Black;
             this.btn0.Location = new System.Drawing.Point(181, 693);
@@ -312,124 +321,101 @@
             this.btn0.TabIndex = 15;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.AgregarNumero);
             // 
             // btnRaiz
             // 
             this.btnRaiz.AutoSize = true;
-            this.btnRaiz.BackColor = System.Drawing.Color.White;
+            this.btnRaiz.BackColor = System.Drawing.Color.LimeGreen;
             this.btnRaiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRaiz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRaiz.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnRaiz.ForeColor = System.Drawing.Color.Black;
-            this.btnRaiz.Location = new System.Drawing.Point(181, 318);
+            this.btnRaiz.Location = new System.Drawing.Point(181, 315);
             this.btnRaiz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRaiz.Name = "btnRaiz";
             this.btnRaiz.Size = new System.Drawing.Size(164, 89);
             this.btnRaiz.TabIndex = 19;
+            this.btnRaiz.Tag = "√";
             this.btnRaiz.Text = "";
             this.btnRaiz.UseVisualStyleBackColor = false;
-            this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
+            this.btnRaiz.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnDividir
             // 
             this.btnDividir.AutoSize = true;
-            this.btnDividir.BackColor = System.Drawing.Color.White;
+            this.btnDividir.BackColor = System.Drawing.Color.LimeGreen;
             this.btnDividir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDividir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDividir.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnDividir.ForeColor = System.Drawing.Color.Black;
-            this.btnDividir.Location = new System.Drawing.Point(523, 318);
+            this.btnDividir.Location = new System.Drawing.Point(523, 315);
             this.btnDividir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(164, 89);
             this.btnDividir.TabIndex = 20;
+            this.btnDividir.Tag = "/";
             this.btnDividir.Text = "";
             this.btnDividir.UseVisualStyleBackColor = false;
-            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            this.btnDividir.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnCuadrado
             // 
             this.btnCuadrado.AutoSize = true;
-            this.btnCuadrado.BackColor = System.Drawing.Color.White;
+            this.btnCuadrado.BackColor = System.Drawing.Color.LimeGreen;
             this.btnCuadrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCuadrado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCuadrado.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuadrado.ForeColor = System.Drawing.Color.Black;
-            this.btnCuadrado.Location = new System.Drawing.Point(353, 318);
+            this.btnCuadrado.Location = new System.Drawing.Point(353, 315);
             this.btnCuadrado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCuadrado.Name = "btnCuadrado";
             this.btnCuadrado.Size = new System.Drawing.Size(164, 89);
             this.btnCuadrado.TabIndex = 21;
+            this.btnCuadrado.Tag = "²";
             this.btnCuadrado.Text = "x²";
             this.btnCuadrado.UseVisualStyleBackColor = false;
-            this.btnCuadrado.Click += new System.EventHandler(this.btnCuadrado_Click);
-            // 
-            // btnC
-            // 
-            this.btnC.AutoSize = true;
-            this.btnC.BackColor = System.Drawing.Color.White;
-            this.btnC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnC.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.btnC.ForeColor = System.Drawing.Color.Black;
-            this.btnC.Location = new System.Drawing.Point(352, 222);
-            this.btnC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(164, 89);
-            this.btnC.TabIndex = 16;
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = false;
-            this.btnC.Click += new System.EventHandler(this.btnC_Click);
-            // 
-            // BtnCE
-            // 
-            this.BtnCE.AutoSize = true;
-            this.BtnCE.BackColor = System.Drawing.Color.White;
-            this.BtnCE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnCE.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.BtnCE.ForeColor = System.Drawing.Color.Black;
-            this.BtnCE.Location = new System.Drawing.Point(182, 222);
-            this.BtnCE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BtnCE.Name = "BtnCE";
-            this.BtnCE.Size = new System.Drawing.Size(164, 89);
-            this.BtnCE.TabIndex = 17;
-            this.BtnCE.Text = "CE";
-            this.BtnCE.UseVisualStyleBackColor = false;
-            this.BtnCE.Click += new System.EventHandler(this.btnCE_Click);
+            this.btnCuadrado.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnDel
             // 
             this.btnDel.AutoSize = true;
-            this.btnDel.BackColor = System.Drawing.Color.White;
+            this.btnDel.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDel.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnDel.ForeColor = System.Drawing.Color.Black;
-            this.btnDel.Location = new System.Drawing.Point(522, 225);
+            this.btnDel.Location = new System.Drawing.Point(523, 220);
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(164, 89);
             this.btnDel.TabIndex = 18;
             this.btnDel.Text = "";
             this.btnDel.UseVisualStyleBackColor = false;
-            this.btnDel.Click += new System.EventHandler(this.btnDEL_Click);
+            this.btnDel.Click += new System.EventHandler(this.RemoverNumero);
             // 
             // btnMostrarHistorial
             // 
             this.btnMostrarHistorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMostrarHistorial.FlatAppearance.BorderSize = 0;
-            this.btnMostrarHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMostrarHistorial.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarHistorial.Location = new System.Drawing.Point(636, 57);
+            this.btnMostrarHistorial.ForeColor = System.Drawing.Color.GreenYellow;
+            this.btnMostrarHistorial.Location = new System.Drawing.Point(635, 23);
             this.btnMostrarHistorial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMostrarHistorial.Name = "btnMostrarHistorial";
             this.btnMostrarHistorial.Size = new System.Drawing.Size(51, 46);
             this.btnMostrarHistorial.TabIndex = 22;
             this.btnMostrarHistorial.Text = "";
             this.btnMostrarHistorial.UseVisualStyleBackColor = true;
-            this.btnMostrarHistorial.Click += new System.EventHandler(this.btnMostrarHistorial_Click);
+            this.btnMostrarHistorial.Click += new System.EventHandler(this.ToggleHistorial);
             // 
             // btnNegativo
             // 
             this.btnNegativo.AutoSize = true;
-            this.btnNegativo.BackColor = System.Drawing.Color.White;
+            this.btnNegativo.BackColor = System.Drawing.Color.LimeGreen;
             this.btnNegativo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnNegativo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNegativo.Font = new System.Drawing.Font("Segoe Fluent Icons", 20.25F);
             this.btnNegativo.ForeColor = System.Drawing.Color.Black;
             this.btnNegativo.Location = new System.Drawing.Point(12, 693);
@@ -439,62 +425,32 @@
             this.btnNegativo.TabIndex = 23;
             this.btnNegativo.Text = "";
             this.btnNegativo.UseVisualStyleBackColor = false;
-            this.btnNegativo.Click += new System.EventHandler(this.btnNegativo_Click);
-            // 
-            // pnlHistorial
-            // 
-            this.pnlHistorial.Controls.Add(this.lstHistorial);
-            this.pnlHistorial.Location = new System.Drawing.Point(21, 149);
-            this.pnlHistorial.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlHistorial.Name = "pnlHistorial";
-            this.pnlHistorial.Size = new System.Drawing.Size(675, 575);
-            this.pnlHistorial.TabIndex = 24;
-            this.pnlHistorial.Visible = false;
-            // 
-            // lstHistorial
-            // 
-            this.lstHistorial.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F);
-            this.lstHistorial.FormattingEnabled = true;
-            this.lstHistorial.ItemHeight = 20;
-            this.lstHistorial.Location = new System.Drawing.Point(44, 38);
-            this.lstHistorial.Margin = new System.Windows.Forms.Padding(4);
-            this.lstHistorial.Name = "lstHistorial";
-            this.lstHistorial.Size = new System.Drawing.Size(576, 464);
-            this.lstHistorial.TabIndex = 0;
-            // 
-            // lblOperacion
-            // 
-            this.lblOperacion.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
-            this.lblOperacion.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblOperacion.Location = new System.Drawing.Point(11, 105);
-            this.lblOperacion.Name = "lblOperacion";
-            this.lblOperacion.Size = new System.Drawing.Size(675, 40);
-            this.lblOperacion.TabIndex = 25;
-            this.lblOperacion.Tag = "0";
-            this.lblOperacion.Text = "0";
-            this.lblOperacion.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnNegativo.Click += new System.EventHandler(this.NumeroANegativo);
             // 
             // btnFact
             // 
             this.btnFact.AutoSize = true;
-            this.btnFact.BackColor = System.Drawing.Color.White;
+            this.btnFact.BackColor = System.Drawing.Color.LimeGreen;
             this.btnFact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnFact.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFact.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnFact.ForeColor = System.Drawing.Color.Black;
-            this.btnFact.Location = new System.Drawing.Point(11, 219);
+            this.btnFact.Location = new System.Drawing.Point(11, 220);
             this.btnFact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFact.Name = "btnFact";
             this.btnFact.Size = new System.Drawing.Size(164, 89);
             this.btnFact.TabIndex = 26;
+            this.btnFact.Tag = '!';
             this.btnFact.Text = "n!";
             this.btnFact.UseVisualStyleBackColor = false;
-            this.btnFact.Click += new System.EventHandler(this.btnFact_Click);
+            this.btnFact.Click += new System.EventHandler(this.AgregarOperador);
             // 
             // btnMod
             // 
             this.btnMod.AutoSize = true;
-            this.btnMod.BackColor = System.Drawing.Color.White;
+            this.btnMod.BackColor = System.Drawing.Color.LimeGreen;
             this.btnMod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMod.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
             this.btnMod.ForeColor = System.Drawing.Color.Black;
             this.btnMod.Location = new System.Drawing.Point(11, 315);
@@ -502,32 +458,130 @@
             this.btnMod.Name = "btnMod";
             this.btnMod.Size = new System.Drawing.Size(164, 89);
             this.btnMod.TabIndex = 27;
+            this.btnMod.Tag = '%';
             this.btnMod.Text = "Mod";
             this.btnMod.UseVisualStyleBackColor = false;
-            this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
+            this.btnMod.Click += new System.EventHandler(this.AgregarOperador);
             // 
-            // Form1
+            // pnlHistorial
+            // 
+            this.pnlHistorial.Controls.Add(this.lstHistorial);
+            this.pnlHistorial.Location = new System.Drawing.Point(11, 86);
+            this.pnlHistorial.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlHistorial.Name = "pnlHistorial";
+            this.pnlHistorial.Size = new System.Drawing.Size(675, 696);
+            this.pnlHistorial.TabIndex = 24;
+            this.pnlHistorial.Visible = false;
+            // 
+            // lstHistorial
+            // 
+            this.lstHistorial.BackColor = System.Drawing.Color.GreenYellow;
+            this.lstHistorial.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F);
+            this.lstHistorial.FormattingEnabled = true;
+            this.lstHistorial.ItemHeight = 20;
+            this.lstHistorial.Location = new System.Drawing.Point(11, -3);
+            this.lstHistorial.Margin = new System.Windows.Forms.Padding(4);
+            this.lstHistorial.Name = "lstHistorial";
+            this.lstHistorial.Size = new System.Drawing.Size(660, 704);
+            this.lstHistorial.TabIndex = 0;
+            // 
+            // lblOperacion
+            // 
+            this.lblOperacion.Font = new System.Drawing.Font("Segoe Fluent Icons", 30F);
+            this.lblOperacion.ForeColor = System.Drawing.Color.GreenYellow;
+            this.lblOperacion.Location = new System.Drawing.Point(14, 118);
+            this.lblOperacion.Name = "lblOperacion";
+            this.lblOperacion.Size = new System.Drawing.Size(669, 83);
+            this.lblOperacion.TabIndex = 29;
+            this.lblOperacion.Tag = "0";
+            this.lblOperacion.Text = "0";
+            this.lblOperacion.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // BtnCE
+            // 
+            this.BtnCE.AutoSize = true;
+            this.BtnCE.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.BtnCE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnCE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnCE.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.BtnCE.ForeColor = System.Drawing.Color.Black;
+            this.BtnCE.Location = new System.Drawing.Point(182, 220);
+            this.BtnCE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCE.Name = "BtnCE";
+            this.BtnCE.Size = new System.Drawing.Size(164, 89);
+            this.BtnCE.TabIndex = 30;
+            this.BtnCE.Text = "CE";
+            this.BtnCE.UseVisualStyleBackColor = false;
+            this.BtnCE.Click += new System.EventHandler(this.LimpiarDisplay);
+            // 
+            // buttonTheme
+            // 
+            this.buttonTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonTheme.FlatAppearance.BorderSize = 0;
+            this.buttonTheme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTheme.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTheme.ForeColor = System.Drawing.Color.GreenYellow;
+            this.buttonTheme.Location = new System.Drawing.Point(22, 23);
+            this.buttonTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonTheme.Name = "buttonTheme";
+            this.buttonTheme.Size = new System.Drawing.Size(104, 54);
+            this.buttonTheme.TabIndex = 31;
+            this.buttonTheme.Text = "Them";
+            this.buttonTheme.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonTheme.UseVisualStyleBackColor = true;
+            this.buttonTheme.Click += new System.EventHandler(this.buttonTheme_Click);
+            // 
+            // lblDisplay
+            // 
+            this.lblDisplay.Font = new System.Drawing.Font("Segoe Fluent Icons", 20F);
+            this.lblDisplay.ForeColor = System.Drawing.Color.GreenYellow;
+            this.lblDisplay.Location = new System.Drawing.Point(13, 74);
+            this.lblDisplay.Name = "lblDisplay";
+            this.lblDisplay.Size = new System.Drawing.Size(675, 44);
+            this.lblDisplay.TabIndex = 28;
+            this.lblDisplay.Tag = "0";
+            this.lblDisplay.Text = "0";
+            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btnC
+            // 
+            this.btnC.AutoSize = true;
+            this.btnC.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnC.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.btnC.ForeColor = System.Drawing.Color.Black;
+            this.btnC.Location = new System.Drawing.Point(353, 220);
+            this.btnC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(164, 89);
+            this.btnC.TabIndex = 35;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.BorrarDisplay);
+            // 
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(699, 789);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(699, 788);
+            this.Controls.Add(this.btnC);
+            this.Controls.Add(this.buttonTheme);
+            this.Controls.Add(this.BtnCE);
+            this.Controls.Add(this.lblOperacion);
+            this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.btnMod);
             this.Controls.Add(this.btnFact);
-            this.Controls.Add(this.lblOperacion);
-            this.Controls.Add(this.pnlHistorial);
             this.Controls.Add(this.btnNegativo);
             this.Controls.Add(this.btnMostrarHistorial);
             this.Controls.Add(this.btnCuadrado);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnRaiz);
             this.Controls.Add(this.btnDel);
-            this.Controls.Add(this.BtnCE);
-            this.Controls.Add(this.btnC);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnPunto);
             this.Controls.Add(this.btnIgual);
-            this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnMultiplicar);
@@ -540,12 +594,14 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn7);
+            this.Controls.Add(this.pnlHistorial);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(717, 836);
-            this.MinimumSize = new System.Drawing.Size(717, 836);
-            this.Name = "Form1";
+            this.MaximumSize = new System.Drawing.Size(717, 835);
+            this.MinimumSize = new System.Drawing.Size(717, 813);
+            this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Calculadora_Load);
             this.pnlHistorial.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -566,23 +622,24 @@
         private System.Windows.Forms.Button btnMultiplicar;
         private System.Windows.Forms.Button btnResta;
         private System.Windows.Forms.Button btnSuma;
-        private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnPunto;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnRaiz;
         private System.Windows.Forms.Button btnDividir;
         private System.Windows.Forms.Button btnCuadrado;
-        private System.Windows.Forms.Button btnC;
-        private System.Windows.Forms.Button BtnCE;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnMostrarHistorial;
         private System.Windows.Forms.Button btnNegativo;
-        private System.Windows.Forms.Panel pnlHistorial;
-        private System.Windows.Forms.ListBox lstHistorial;
-        private System.Windows.Forms.Label lblOperacion;
         private System.Windows.Forms.Button btnFact;
         private System.Windows.Forms.Button btnMod;
+        private System.Windows.Forms.Panel pnlHistorial;
+        private System.Windows.Forms.Label lblOperacion;
+        private System.Windows.Forms.Button BtnCE;
+        private System.Windows.Forms.Button buttonTheme;
+        private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.ListBox lstHistorial;
+        private System.Windows.Forms.Button btnC;
     }
 }
 
