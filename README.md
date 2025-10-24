@@ -182,18 +182,41 @@ git rebase --abort
 ### En Remote
 ```
 Calculadora-cs/
+│   .gitattributes
+│   .gitignore
+│   makefile
+│   README.md
 │
-├─ Properties/             # Archivos de configuración del proyecto
-│   ├─ Resources.resx
-│   └─ AssemblyInfo.cs
-├─ App.config              # Configuración de la aplicación
-├─ Form1.cs                # Lógica principal del formulario
-├─ Form1.Designer.cs       # Diseño de la interfaz
-├─ Form1.resx              # Recursos del formulario
-├─ Program.cs              # Punto de entrada de la aplicación
-├─ Calculadora123.csproj   # Archivo del proyecto C#
-├─ .gitignore              # Ignorar bin, obj y archivos temporales
-└─ Calculadora12.sln       # Solución de Visual Studio
+├───assets
+│       calc.sql
+│       neo.png
+│       nu_get.png
+│       sql_server.png
+│       std.png
+│       type.png
+│
+├───docs
+│       dump.md
+│       README.md
+│
+└───src
+    │   Calculadora.sln
+    │
+    └───Calculadora
+        │   App.config
+        │   Calculadora.csproj
+        │   Form1.cs
+        │   Form1.Designer.cs
+        │   Form1.resx
+        │   packages.config
+        │   Program.cs
+        │
+        └───Properties
+                AssemblyInfo.cs
+                Resources.Designer.cs
+                Resources.resx
+                Settings.Designer.cs
+                Settings.settings
 ```
 ## Botones
 
