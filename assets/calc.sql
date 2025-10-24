@@ -1,0 +1,31 @@
+USE master
+GO
+
+ALTER DATABASE [Calc] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+GO
+
+DROP DATABASE IF EXISTS Calc
+GO
+
+CREATE DATABASE Calc
+GO
+
+USE Calc
+GO
+
+CREATE TABLE [dbo].[Historial] (
+	id INT NOT NULL IDENTITY(1,1),
+	Num1 FLOAT not NULL,
+	Op CHAR(1) NOT NULL,
+	Num2 FLOAT not NULL,
+	Result FLOAT not NULL,
+	DateCalc DATETIME2(0) NOT NULL
+)
+GO
+
+INSERT INTO [dbo].[Historial] 
+(Num1, Op, Num2, Result, DateCalc)
+VALUES
+(20, '+', 20, 40, '2025-10-24 10:00:00'),
+(20, '+', 20, 40, '2025-10-24 10:00:00');
+GO
