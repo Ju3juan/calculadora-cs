@@ -33,7 +33,7 @@ erDiagram
     Historial {
         INT id
         FLOAT Num1
-        CHAR OpeOpracion
+        CHAR Op
         FLOAT Num2
         FLOAT Result
         DATETIME2 DateCalc
