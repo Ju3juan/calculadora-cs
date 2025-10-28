@@ -36,9 +36,7 @@ erDiagram
         CHAR Op
         FLOAT Num2
         FLOAT Result
-        DATETIME2 DateCalc
     }
-
 ```
 
 ## Timeline

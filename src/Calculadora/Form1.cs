@@ -45,16 +45,20 @@ namespace Calculadora
                 this.SqlConexion = new SqlConnection(SqlConnectionString);
                 this.SqlConexion.Open();
 
-                this.SqlConsulta = new SqlCommand("SELECT [Num1], [Op], [Num2], [Result], [DateCalc] FROM [dbo].[Historial]", this.SqlConexion);
+                //this.SqlConsulta = new SqlCommand("SELECT [Num1], [Op], [Num2], [Result], [DateCalc] FROM [dbo].[Historial]", this.SqlConexion);
+                this.SqlConsulta = new SqlCommand("SELECT [Num1], [Op], [Num2], [Result] FROM [dbo].[Historial]", this.SqlConexion);
+
 
                 this.SqlListar = this.SqlConsulta.ExecuteReader();
 
                 this.lstHistorial.Items.Clear();
-                this.lstHistorial.Items.Add($"Num1, OP, Num2, Result, DateCalc");
+                //this.lstHistorial.Items.Add($"Num1, OP, Num2, Result, DateCalc");
+                this.lstHistorial.Items.Add($"Num1, OP, Num2, Result");
 
                 while (this.SqlListar.Read())
                 {
-                    this.lstHistorial.Items.Add($"{this.SqlListar["Num1"].ToString()}, {this.SqlListar["Op"].ToString()}, {this.SqlListar["Num2"].ToString()}, {this.SqlListar["Result"].ToString()}. {this.SqlListar["DateCalc"].ToString()}");
+                    //this.lstHistorial.Items.Add($"{this.SqlListar["Num1"].ToString()}, {this.SqlListar["Op"].ToString()}, {this.SqlListar["Num2"].ToString()}, {this.SqlListar["Result"].ToString()}. {this.SqlListar["DateCalc"].ToString()}");
+                    this.lstHistorial.Items.Add($"{this.SqlListar["Num1"].ToString()}, {this.SqlListar["Op"].ToString()}, {this.SqlListar["Num2"].ToString()}, {this.SqlListar["Result"].ToString()}");
                 }
 
                 this.SqlConexion.Close();
@@ -76,7 +80,10 @@ namespace Calculadora
                 this.SqlConexion = new SqlConnection(SqlConnectionString);
                 this.SqlConexion.Open();
 
-                string SqlQuery = $"INSERT INTO Historial (Num1, Op, Num2, Result, DateCalc) VALUES({this.Number2}, '{this.Operator}', {this.Number1}, {this.Result}, '{DateTime.Now}')";
+                //string SqlQuery = $"INSERT INTO Historial (Num1, Op, Num2, Result, DateCalc) VALUES({this.Number2}, '{this.Operator}', {this.Number1}, {this.Result}, '{DateTime.Now}')";
+                string SqlQuery = $"INSERT INTO Historial (Num1, Op, Num2, Result) VALUES({this.Number2}, '{this.Operator}', {this.Number1}, {this.Result})";
+                
+                
                 this.SqlConsulta = new SqlCommand(SqlQuery, this.SqlConexion);
                 this.SqlConsulta.CommandType = CommandType.Text;
                 this.SqlConsulta.ExecuteNonQuery();

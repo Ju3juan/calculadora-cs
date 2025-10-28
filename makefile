@@ -2,6 +2,10 @@
 
 SHELL := /usr/bin/env bash
 
+git:
+	git add -A 
+	git commit -m "Fix Date"
+	git push -u origin main
 
 git_commit:
 	git add -A 
