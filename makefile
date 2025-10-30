@@ -1,7 +1,11 @@
-.PHONY: git_commit_push
+.PHONY: git git_commit_push
 
 SHELL := /usr/bin/env bash
 
+git:
+	git add -A
+	git commit -m "Fix(mod, font)"
+	git push -u origin main
 
 git_commit:
 	git add -A 
