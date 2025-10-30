@@ -335,6 +335,7 @@ namespace Calculadora
         string ErrRaiz = "Raiz de numero negativo";
         string ErrDiv0 = "No se puede dividir entre 0";
         string ErrFactorialFloatNegativo = "Factorial no float ni negativo";
+        string ErrMod0 = "Mod no puede ser 0";
         private void CheckText()
         {
 
@@ -353,6 +354,13 @@ namespace Calculadora
             }
 
             if (this.lblOperacion.Text == this.ErrFactorialFloatNegativo)
+            {
+                lblOperacion.Text = "0";
+                lblDisplay.Text = "0";
+                return;
+            }
+
+            if (this.lblOperacion.Text == this.ErrMod0)
             {
                 lblOperacion.Text = "0";
                 lblDisplay.Text = "0";
@@ -445,6 +453,13 @@ namespace Calculadora
                     return;
 
                 case '%':
+
+                    if (this.lblOperacion.Text.Contains("0"))
+                    {
+                        this.lblOperacion.Text = this.ErrMod0;
+                        this.lblDisplay.Text = "0";
+                        return;
+                    }
 
                     if (this.lblDisplay.Text.Contains("%"))
                     {
