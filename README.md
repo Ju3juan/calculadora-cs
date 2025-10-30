@@ -148,9 +148,9 @@ thumbs.db
 
 ## Install
 
-- Abre y corre el .sql en `../assets/calc.sql`
-- (Windows 10) Instala la fuente en `../assets/Segoe-Fluent-Icons.zip` 
-- Abre el Calculadora.sln en `../src/Calculadora.sln`
+- Abre y corre el .sql en `./assets/calc.sql`
+- (Windows 10) Instala la fuente en `./assets/Segoe-Fluent-Icons.zip` [Diseño de recursos para aplicaciones de Windows](https://learn.microsoft.com/es-mx/windows/apps/design/downloads/#fonts) 
+- Abre el Calculadora.sln en `./src/Calculadora.sln`
 
 `Tools > NuGet Package Manager > Manager Packages for Solution...`
 
