@@ -5,7 +5,7 @@
 ![v0.9_calculadora-cs](./assets/neo.png)
 
 ## Resumen
-Crear una **aplicación de calculadora en Windows Forms con C#** que permita a un usuario anónimo realizar cálculos básicos y algunos avanzados, registrando cada operación en una base 
+Crear una **aplicación de calculadora en Windows Forms con C#** que permita a un usuario anónimo realizar cálculos básicos y algunos avanzados, registrando cada operación en una base
 de datos SQL Server.
 
 ## Requisitos Funcionales
@@ -78,7 +78,7 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%b
 
-  
+
     section Iteración 1
     Wireframe y Planeación Inicial       :a1, 2025-10-14, 2d
     Configurar repositorio GitHub        :a2, 2025-10-14, 1d
@@ -88,7 +88,7 @@ gantt
     Implementación Operaciones Básicas   :a6, 2025-10-17, 4d
     Guardar Cálculos en DB               :a7, 2025-10-18, 3d
 
-  
+
 
     section Iteración 2
     Operaciones Avanzadas                :b1, 2025-10-23, 3d
@@ -149,7 +149,7 @@ thumbs.db
 ## Install
 
 - Abre y corre el .sql en `./assets/calc.sql`
-- (Windows 10) Instala la fuente en `./assets/Segoe-Fluent-Icons.zip` [Diseño de recursos para aplicaciones de Windows](https://learn.microsoft.com/es-mx/windows/apps/design/downloads/#fonts) 
+- (Windows 10) Instala la fuente en `./assets/Segoe-Fluent-Icons.zip` [Diseño de recursos para aplicaciones de Windows](https://learn.microsoft.com/es-mx/windows/apps/design/downloads/#fonts)
 - Abre el Calculadora.sln en `./src/Calculadora.sln`
 
 `Tools > NuGet Package Manager > Manager Packages for Solution...`
@@ -168,12 +168,12 @@ git config --global core.eol lf
 
 
 ### Git Pull
-Always try 
+Always try
 ```zsh
 git pull --rebase
 ```
 
-if you get a merge conflict, you can undo everything with 
+if you get a merge conflict, you can undo everything with
 ```zsh
 git rebase --abort
 ```
@@ -269,3 +269,28 @@ flowchart TD
 # References
 
 [Rivera, R. (2025). _DS4-Proyecto1-WinFormsApp_ [Documento PDF]. Universidad Tecnológica de Panamá.](https://utpac.sharepoint.com/sites/DSIV-1GS221-II2025/_layouts/15/embed.aspx)
+
+
+
+# Proyecto 2 - Calculadora Web Api
+
+
+![web_api_db](./assets/web_api_db.png)
+
+![web_api_db_1_get](./assets/web_api_db_1_get.png)
+
+![web_api_db_2_add](./assets/web_api_db_2_add.png)
+
+![web_api_db_3_sub](./assets/web_api_db_3_sub.png)
+
+![web_api_db_4_mul](./assets/web_api_db_4_mul.png)
+
+![web_api_db_5_div](./assets/web_api_db_5_div.png)
+
+![web_api_db_6_mod](./assets/web_api_db_6_mod.png)
+
+![web_api_db_7_pow2](./assets/web_api_db_7_pow2.png)
+
+![web_api_db_8_raiz](./assets/web_api_db_8_raiz.png)
+
+![web_api_db_9_err](./assets/web_api_db_9_err.png)

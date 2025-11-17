@@ -18,14 +18,18 @@ CREATE TABLE [dbo].[Historial] (
 	Num1 FLOAT not NULL,
 	Op CHAR(1) NOT NULL,
 	Num2 FLOAT not NULL,
-	Result FLOAT not NULL,
-	DateCalc DATETIME2(0) NOT NULL
+	Result FLOAT not NULL
+--	DateCalc DATETIME2(0) NOT NULL
 )
 GO
 
+--INSERT INTO [dbo].[Historial] (Num1, Op, Num2, Result, DateCalc) VALUES
+-- (20, '+', 20, 40, '2025-10-24 10:00:00'),
+-- (20, '+', 20, 40);
+-- GO
+
 INSERT INTO [dbo].[Historial] 
-(Num1, Op, Num2, Result, DateCalc)
+(Num1, Op, Num2, Result)
 VALUES
-(20, '+', 20, 40, '2025-10-24 10:00:00'),
-(20, '+', 20, 40, '2025-10-24 10:00:00');
+(20, '+', 20, 40)
 GO
