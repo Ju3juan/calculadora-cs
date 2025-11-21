@@ -82,8 +82,8 @@ namespace Calculadora
 
                 //string SqlQuery = $"INSERT INTO Historial (Num1, Op, Num2, Result, DateCalc) VALUES({this.Number2}, '{this.Operator}', {this.Number1}, {this.Result}, '{DateTime.Now}')";
                 string SqlQuery = $"INSERT INTO Historial (Num1, Op, Num2, Result) VALUES({this.Number2}, '{this.Operator}', {this.Number1}, {this.Result})";
-                
-                
+
+
                 this.SqlConsulta = new SqlCommand(SqlQuery, this.SqlConexion);
                 this.SqlConsulta.CommandType = CommandType.Text;
                 this.SqlConsulta.ExecuteNonQuery();
@@ -111,7 +111,7 @@ namespace Calculadora
                     this.TypeTheme = Calculadora.Theme.NEODARK;
 
                     this.BackColor = Color.White;
-                    
+
 
                     this.btn0.BackColor = System.Drawing.Color.White;
                     this.btn1.BackColor = System.Drawing.Color.White;
@@ -252,7 +252,7 @@ namespace Calculadora
                     this.lblDisplay.ForeColor = System.Drawing.Color.GreenYellow;
                     this.lblOperacion.ForeColor = System.Drawing.Color.GreenYellow;
                     this.lstHistorial.BackColor = System.Drawing.Color.GreenYellow;
-                    
+
 
 
                     break;
@@ -312,7 +312,7 @@ namespace Calculadora
                 return;
             }
             this.lblOperacion.Text = "0";
-            
+
         }
 
         private void AgregarNumero(object sender, EventArgs e)
@@ -339,32 +339,35 @@ namespace Calculadora
             }
         }
 
-        string ErrRaiz = "Raiz de numero negativo";
-        string ErrDiv0 = "No se puede dividir entre 0";
-        string ErrFactorialFloatNegativo = "Factorial no float ni negativo";
+        string ErrRaiz = "Err Raiz de numero negativo";
+        string ErrDiv0 = "Err No se puede dividir entre 0";
+        string ErrFactorialFloatNegativo = "Err Factorial no float ni negativo";
+        string ErrMod0 = "Err Mod no puede ser 0";
         private void CheckText()
         {
-
-            if (this.lblOperacion.Text == this.ErrDiv0)
-            {
+            if (this.lblOperacion.Text.Contains("Err")) {
                 lblOperacion.Text = "0";
                 lblDisplay.Text = "0";
                 return;
             }
 
-            if (this.lblOperacion.Text == this.ErrRaiz)
-            {
-                lblOperacion.Text = "0";
-                lblDisplay.Text = "0";
-                return;
-            }
+            //if (this.lblOperacion.Text == this.ErrDiv0)
+            //{
+            //}
 
-            if (this.lblOperacion.Text == this.ErrFactorialFloatNegativo)
-            {
-                lblOperacion.Text = "0";
-                lblDisplay.Text = "0";
-                return;
-            }
+            //if (this.lblOperacion.Text == this.ErrRaiz)
+            //{
+            //    lblOperacion.Text = "0";
+            //    lblDisplay.Text = "0";
+            //    return;
+            //}
+
+            //if (this.lblOperacion.Text == this.ErrFactorialFloatNegativo)
+            //{
+            //    lblOperacion.Text = "0";
+            //    lblDisplay.Text = "0";
+            //    return;
+            //}
         }
 
 
@@ -373,7 +376,7 @@ namespace Calculadora
             switch (this.Operator)
             {
                 case '-':
-
+                    // sub
                     if (this.lblDisplay.Text.Contains("-"))
                     {
                         this.Result = this.Number2 - this.Number1;
@@ -391,6 +394,7 @@ namespace Calculadora
                     return;
 
                 case '*':
+                    // Mul
                     if (this.lblDisplay.Text.Contains("*"))
                     {
                         this.Result = this.Number2 * this.Number1;
@@ -408,6 +412,7 @@ namespace Calculadora
                     return;
 
                 case '+':
+                    // Add
                     if (this.lblDisplay.Text.Contains("+"))
                     {
                         this.Result = this.Number2 + this.Number1;
@@ -425,6 +430,8 @@ namespace Calculadora
                     return;
 
                 case '/':
+                    // div
+
                     if (this.lblDisplay.Text.Contains("/"))
                     {
 
@@ -452,6 +459,14 @@ namespace Calculadora
                     return;
 
                 case '%':
+                    // mod
+                    if (this.lblOperacion.Text.Contains("0"))
+                    {
+                        this.lblOperacion.Text = this.ErrMod0;
+                        this.lblDisplay.Text = "0";
+                        return;
+                    }
+
 
                     if (this.lblDisplay.Text.Contains("%"))
                     {
@@ -470,7 +485,7 @@ namespace Calculadora
                     return;
 
                 case '²':
-
+                    // Pow2
                     if (this.lblOperacion.Text.Contains("-"))
                     {
 
@@ -490,7 +505,7 @@ namespace Calculadora
                     return;
 
                 case '!':
-
+                    // Fact 
                     if (this.lblOperacion.Text.Contains(".") || this.lblOperacion.Text.Contains("-"))
                     {
                         this.lblOperacion.Text = this.ErrFactorialFloatNegativo;
@@ -513,6 +528,7 @@ namespace Calculadora
                     return;
 
                 case '√':
+                    // Raiz or Sqrt
                     if (this.Number1 >= 0)
                     {
                         this.Result = Math.Sqrt(this.Number1);
@@ -552,20 +568,20 @@ namespace Calculadora
 
             if (this.Operator == '=')
             {
-                
+
                 this.Operator = this.lblDisplay.Text[this.lblDisplay.Text.Length - 1];
                 this.CalcPower();
                 return;
             }
 
-           this.CalcPower();
+            this.CalcPower();
         }
 
 
         private void ToggleHistorial(object sender, EventArgs e)
         {
             bool mostrar = !this.pnlHistorial.Visible;
-            
+
             switch (mostrar)
             {
                 case true:
@@ -577,7 +593,7 @@ namespace Calculadora
                     this.pnlHistorial.Visible = mostrar;
                     this.pnlHistorial.SendToBack();
                     return;
-                    
+
 
             }
             SqlConnectionHistorial();

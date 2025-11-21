@@ -2,6 +2,7 @@
 **/.nvim/
 **/.vs/
 **/.vscode/
+**/.zed/
 
 ## Binary folders
 **/Debug/
@@ -10,7 +11,7 @@
 **/packages/
 
 # Compress files
-*.zip
+# *.zip
 *.7z
 
 # tmp
